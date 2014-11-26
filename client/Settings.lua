@@ -11,12 +11,8 @@ function TL_Settings:SetSettings()
   self.IndicatorSizeX = 96
   self.IndicatorSizeY = 96 -- how large the indicators on targets should be, in pixels
   
-  --- DO NOT CHANGE THE FOLLOWING VARIABLES ---
-  
-  self.IndicatorSize = Vector2(self.IndicatorSizeX, self.IndicatorSizeY)
-  
   self.TargetKey = string.byte("Y")
-  
+    
   self.ShowInfoOnlyIfDriverPresent = false
   
   self.DisplayOnlyForCertainVehicles = false
@@ -27,6 +23,11 @@ function TL_Settings:SetSettings()
     34, -- G9 Eclipse
     37 -- Sivirkin 15 Havoc
   }
+  
+  --- DO NOT CHANGE THE FOLLOWING VARIABLES ---
+  
+  self.IndicatorSize = Vector2(self.IndicatorSizeX, self.IndicatorSizeY)
+
 end
 
 Settings = TL_Settings()
