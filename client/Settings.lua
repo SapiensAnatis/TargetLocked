@@ -17,7 +17,7 @@ function TL_Settings:SetSettings()
     
   self.ShowInfoOnlyIfDriverPresent = false
   
-  self.DisplayOnlyForCertainVehicles = true
+  self.DisplayOnlyForCertainVehicles = false
   
   self.CertainVehicles = { -- the model IDs of the vehicles you want. List available @ http://wiki.jc-mp.com/Model_ID
     -- Enter like this:
