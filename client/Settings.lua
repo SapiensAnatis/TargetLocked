@@ -8,6 +8,8 @@ end
 function TL_Settings:SetSettings()
   self.ScanRadius = 4000 -- the radius in which vehicles should be scanned for, in meters (1km = 1000m).
   -- Note: increasing this setting to extremely high values will slow down the script dramatically.
+  -- It will not have an impact on the server, as it is a client-only script, but users will likely
+  -- experience FPS drops.
   self.IndicatorSizeX = 96
   self.IndicatorSizeY = 96 -- how large the indicators on targets should be, in pixels
   

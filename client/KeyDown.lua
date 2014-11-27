@@ -31,16 +31,17 @@ function TL_Input:KeyDown(args)
         
         if IsValid(lowestV) then
           if lowestV:GetId() == LocalPlayer:GetValue("TL_Target") then
-            LocalPlayer:SetValue("Target", nil)
+            LocalPlayer:SetValue("TL_Target", nil)
           else
-            LocalPlayer:SetValue("Target", lowestV:GetId())
+            LocalPlayer:SetValue("TL_Target", lowestV:GetId())
+            print("Target set!", LocalPlayer:GetValue("Target"))
           end
         end
       else
         if LocalPlayer:GetAimTarget().entity:GetId() == LocalPlayer:GetValue("TL_Target") then
-          LocalPlayer:SetValue("Target", nil)
+          LocalPlayer:SetValue("TL_Target", nil)
         else
-          LocalPlayer:SetValue("Target", LocalPlayer:GetAimTarget().entity:GetId())
+          LocalPlayer:SetValue("TL_Target", LocalPlayer:GetAimTarget().entity:GetId())
         end
       end
       

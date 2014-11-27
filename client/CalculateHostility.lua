@@ -23,14 +23,17 @@ function TargetScanner:CalculateHostility(vehicle) -- you may wish to modify thi
     if IsValid(vehicle:GetDriver()) then
       if vehicle:GetId() == LocalPlayer:GetValue("TL_Target") then
         return "Target"
+        
       else
-        return "Friendly"
+        return "Hostile"
       end
     else
       if vehicle:GetId() == LocalPlayer:GetValue("TL_Target") then
         return "Target"
       else
+        print(vehicle:GetId(), LocalPlayer:GetValue("TL_Target"))
         return "Passive"
+        
       end
     end
   else
