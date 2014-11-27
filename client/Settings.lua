@@ -20,9 +20,9 @@ function TL_Settings:SetSettings()
   self.DisplayOnlyForCertainVehicles = true
   
   self.CertainVehicles = { -- the model IDs of the vehicles you want. List available @ http://wiki.jc-mp.com/Model_ID
-  -- Enter like this:
-    ["11"] = 11,
-    ["30"] = 30,-- Sivirkin 15 Havoc
+    -- Enter like this:
+    ["30"] = 30,
+    ["31"] = 31,
   }
   
   --- DO NOT CHANGE THE FOLLOWING VARIABLES ---
