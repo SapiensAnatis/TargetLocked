@@ -1,7 +1,7 @@
 function ModulesLoad()
 	Events:Fire("HelpAddItem",
 		{
-			name = "Target Locked"
+			name = "Target Locked",
 			text =
 			"This is a script that allows for the targeting of other vehicles while in a vehicle yourself.\n"..
 			"Target indicators can turn several colours - red indicates hostile, green indicates friendly,\n"..
@@ -21,4 +21,4 @@ function ModuleUnload()
 end
 
 Events:Subscribe("ModulesLoad", ModulesLoad)
-Events:Subscribe("ModulesUnload", ModulesUnload)
+Events:Subscribe("ModuleUnload", ModuleUnload)
