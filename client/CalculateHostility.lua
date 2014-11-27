@@ -31,9 +31,7 @@ function TargetScanner:CalculateHostility(vehicle) -- you may wish to modify thi
       if vehicle:GetId() == LocalPlayer:GetValue("TL_Target") then
         return "Target"
       else
-        print(vehicle:GetId(), LocalPlayer:GetValue("TL_Target"))
         return "Passive"
-        
       end
     end
   else

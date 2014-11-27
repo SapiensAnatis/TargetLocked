@@ -44,8 +44,8 @@ function TL_DrawHandler:SelectivelyDraw()
         if not Settings.DisplayOnlyForCertainVehicles then
           TL_DrawHandler:CheckAndDraw(vehicle)
         else
-          if table.find(Settings.CertainVehicles, vehicle:GetModelId()) == nil then 
-            return
+          if not Settings.CertainVehicles[tostring(vehicle:GetModelId())] then 
+            -- do nothing
           else
             TL_DrawHandler:CheckAndDraw(vehicle)
           end

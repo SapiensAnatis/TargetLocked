@@ -34,7 +34,6 @@ function TL_Input:KeyDown(args)
             LocalPlayer:SetValue("TL_Target", nil)
           else
             LocalPlayer:SetValue("TL_Target", lowestV:GetId())
-            print("Target set!", LocalPlayer:GetValue("Target"))
           end
         end
       else
